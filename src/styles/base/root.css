@@ -1,0 +1,27 @@
+@custom-media --sm (width >= 25em);
+@custom-media --md (width >= 48em);
+@custom-media --lg (width >= 70em);
+@custom-media --xl (width >= 96em);
+@custom-media --xxl (width >= 120em);
+
+:root {
+    --half-padding: 0.625rem;
+    --base-padding: 1.25rem;
+    --double-padding: 2.5rem;
+    --triple-padding: 3.75rem;
+
+    --base-rhythm: 1.25rem;
+    --fluid-type-min-width: 25;
+    --fluid-type-max-width: 96;
+
+    --font-color: #1A1A1A;
+    --font-base: 'Quicksand', sans-serif;
+    --font-header: 'Quicksand', sans-serif;
+
+    --outline-color: #FF5722;
+    --selection-color: #FF5722;
+
+    --color-yellow: #FEC107;
+
+    --color-grey: #333B44;
+}

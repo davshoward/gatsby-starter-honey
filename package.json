@@ -1,0 +1,55 @@
+{
+    "name": "gatsby-starter-honey",
+    "description": "A delicious baseline for Gatsby (v2).",
+    "version": "1.0.0",
+    "author": "Davs Howard <hi@davshoward.com>",
+    "dependencies": {
+        "dotenv": "^8.0.0",
+        "gatsby": "^2.7.1",
+        "gatsby-image": "^2.1.0",
+        "gatsby-plugin-canonical-urls": "^2.0.13",
+        "gatsby-plugin-catch-links": "^2.0.15",
+        "gatsby-plugin-google-analytics": "^2.0.20",
+        "gatsby-plugin-manifest": "^2.1.1",
+        "gatsby-plugin-offline": "^2.1.1",
+        "gatsby-plugin-postcss": "^2.0.7",
+        "gatsby-plugin-react-helmet": "^3.0.12",
+        "gatsby-plugin-robots-txt": "^1.4.0",
+        "gatsby-plugin-sharp": "^2.1.0",
+        "gatsby-plugin-sitemap": "^2.1.0",
+        "gatsby-plugin-web-font-loader": "^1.0.4",
+        "gatsby-source-filesystem": "^2.0.37",
+        "gatsby-transformer-sharp": "^2.1.19",
+        "postcss-color-mod-function": "^3.0.3",
+        "postcss-import": "^12.0.1",
+        "postcss-nested": "^4.1.2",
+        "postcss-preset-env": "^6.6.0",
+        "postcss-scss": "^2.0.0",
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-helmet": "^5.2.1"
+    },
+    "devDependencies": {
+        "prettier": "^1.17.1"
+    },
+    "keywords": [
+        "gatsby"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "format": "prettier --write src/**/*.{js,jsx}",
+        "start": "npm run develop",
+        "serve": "gatsby serve",
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davshoward/gatsby-starter-honey"
+    },
+    "bugs": {
+        "url": "https://github.com/davshoward/gatsby-starter-honey/issues"
+    }
+}

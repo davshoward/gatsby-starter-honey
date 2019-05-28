@@ -1,0 +1,108 @@
+h1 {
+	--heading-min-size: 2;
+	--heading-max-size: 4;
+	font-size: 2rem;
+}
+
+h2 {
+	--heading-min-size: 1.75;
+	--heading-max-size: 3;
+	font-size: 1.75rem;
+}
+
+h3 {
+	--heading-min-size: 1.4;
+	--heading-max-size: 1.6;
+	font-size: 1.4rem;
+}
+
+h4 {
+	--heading-min-size: 1.2;
+	--heading-max-size: 1.4;
+	font-size: 1.2rem;
+}
+
+h5 {
+	--heading-min-size: 1;
+	--heading-max-size: 1.2;
+	font-size: 1rem;
+}
+
+h6 {
+	--heading-min-size: 1;
+	--heading-max-size: 1.2;
+	font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	display: inline-block;
+	width: 100%;
+    color: var(--color-deepsea);
+	font-size: calc(
+		(var(--heading-min-size) * 1rem) +
+			(var(--heading-max-size) - var(--heading-min-size)) *
+			(100vw - (var(--fluid-type-min-width) * 1rem)) /
+			(var(--fluid-type-max-width) - var(--fluid-type-min-width))
+	);
+	font-family: var(--font-header);
+	line-height: 1.2;
+}
+
+a {
+	color: var(--main-color);
+}
+
+p,
+ul,
+ol {
+	font-size: 1rem;
+	line-height: 1.6;
+
+	@media (--md) {
+		font-size: 1.125rem;
+	}
+
+	@media (--lg) {
+		font-size: 1.25rem;
+	}
+
+	&:empty {
+		display: none;
+	}
+}
+
+ul,
+ol {
+	padding-left: var(--base-padding);
+
+	ul,
+	ol {
+		padding-left: var(--base-padding);
+	}
+}
+
+blockquote {
+	position: relative;
+	font-size: 1.125rem;
+	padding-left: 2.5rem;
+
+	&::before {
+		content: url("/icons/quote.svg");
+		width: 2rem;
+		height: 2rem;
+		position: absolute;
+		top: 0;
+		left: -0.5rem;
+		color: var(--color-pink);
+	}
+}
+
+cite {
+	display: block;
+	font-style: normal;
+}

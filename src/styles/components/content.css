@@ -1,0 +1,9 @@
+.section-padding {
+	padding-top: var(--base-padding);
+	padding-bottom: var(--base-padding);
+
+	@media (--lg) {
+		padding-top: 3vw;
+		padding-bottom: 3vw;
+	}
+}

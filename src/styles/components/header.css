@@ -1,0 +1,40 @@
+.header {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 7;
+	background: var(--color-yellow);
+    padding: var(--base-padding) 0;
+
+	@media (--md) {
+		padding: var(--base-padding);
+	}
+}
+
+.main-bar {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    flex: 0 1 auto;
+	display: flex;
+	align-items: center;
+	margin-right: var(--base-padding);
+	font-size: 1.5rem;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: -1px;
+	transition: all 0.2s ease;
+
+	svg {
+		width: 3rem;
+		height: 3rem;
+		margin-right: 0.5rem;
+	}
+
+	&:hover {
+		color: white;
+	}
+}

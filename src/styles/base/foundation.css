@@ -1,0 +1,249 @@
+// ==========================================================================
+//   The Foundation.
+// ==========================================================================
+
+// Display resets
+
+* {
+	margin: 0;
+	padding: 0;
+
+	&,
+	&::before,
+	&::after {
+		box-sizing: inherit;
+	}
+}
+
+html {
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+		Noto Sans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol', 'Noto Color Emoji';
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-ms-overflow-style: scrollbar;
+	word-break: break-word;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--font-color);
+	font-family: var(--font-base);
+	font-size: 1rem;
+	overflow-wrap: break-word;
+	scroll-behavior: smooth;
+}
+
+main {
+	display: block;
+}
+
+hr {
+	height: 0;
+	overflow: visible;
+}
+
+nav ol,
+nav ul {
+	list-style: none;
+}
+
+[hidden],
+.hidden {
+	display: none !important;
+}
+
+// Typography
+
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+
+	&:active,
+	&:hover {
+		outline: 0;
+	}
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+small {
+	font-size: 80%;
+}
+
+::-moz-selection,
+::selection {
+	background-color: var(--selection-color);
+	color: var(--font-color);
+	text-shadow: none;
+}
+
+// Images
+
+img {
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+	display: inline-block;
+	vertical-align: middle;
+	border: 0;
+	border-style: none;
+}
+
+// Forms
+
+button,
+input,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+}
+
+button,
+input,
+select {
+	overflow: visible;
+}
+
+button {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	-webkit-font-smoothing: inherit;
+	letter-spacing: inherit;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+input {
+	overflow: visible;
+}
+
+textarea {
+	resize: vertical;
+	overflow: auto;
+}
+
+select {
+	text-transform: none;
+}
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+// Tables
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Embeded content
+
+audio,
+canvas,
+iframe,
+svg,
+video {
+	vertical-align: middle;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+svg:not([fill]) {
+	fill: currentColor;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+.layout-svgs {
+	position: absolute;
+	left: -300%;
+}
+
+// Scripting
+
+canvas {
+	display: inline-block;
+}
+
+template {
+	display: none;
+}
+
+// Interaction
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+	touch-action: manipulation;
+}
+
+// Accessibility
+
+[aria-busy='true'] {
+	cursor: progress;
+}
+
+[aria-controls] {
+	cursor: pointer;
+}
+
+[aria-disabled='true'],
+[disabled] {
+	cursor: not-allowed;
+}
+
+[aria-hidden='false'][hidden]:not(:focus) {
+	clip: rect(0, 0, 0, 0);
+	display: inherit;
+	position: absolute;
+}
+
+.no-js *:focus {
+	box-shadow: 0 0 0 2px var(--outline-color);
+}
+
+*:focus:not(.focus-visible) {
+	outline: none;
+}
+
+.focus-visible {
+	box-shadow: 0 0 0 2px var(--outline-color);
+}
+
+// Remove all animations and transitions for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+	body {
+		scroll-behavior: auto;
+	}
+
+	* {
+		transition: none !important;
+	}
+}
