@@ -6,6 +6,8 @@ A delicious baseline for Gatsby (v2).
 
 Providing a baseline Gatsby project to quickly and easily build upon, whilst featuring all the requirements a site should have.
 
+[Demo site](https://gatsbyhoney.davshoward.com)
+
 ## Features 💪
 
 - Gastby v2
@@ -13,6 +15,8 @@ Providing a baseline Gatsby project to quickly and easily build upon, whilst fea
 - Google Analytics
 - PostCSS support
 - Developer enviornment variables
+- Accessibility support
+- Based on Gatsby Starter Default
 
 
 ## Getting started 📖
