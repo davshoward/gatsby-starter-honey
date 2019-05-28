@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, SEO } from "../layout/Index";
+import { Layout, SEO } from "../layout";
 
 const IndexPage = () => (
 	<Layout>
