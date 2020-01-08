@@ -1,8 +1,7 @@
 module.exports = {
 	url: `https://honey.davshoward.com`,
 	title: `Gatsby Honey`,
-	description:
-		"Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+	description: "A delicious baseline for Gatsby (v2).",
 	social: {
 		image: `https://honey.davshoward.com/images/social.png`,
 		twitter: "davshoward",
