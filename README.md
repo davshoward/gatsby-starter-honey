@@ -10,14 +10,13 @@ Providing a baseline Gatsby project to quickly and easily build upon, whilst fea
 
 ## Features 💪
 
-- Gastby v2
-- SEO (including robots.txt, sitemap generation, automated yet customisable metadata, and social sharing data)
-- Google Analytics
-- PostCSS support
-- Developer enviornment variables
-- Accessibility support
-- Based on Gatsby Starter Default
-
+-   Gastby v2
+-   SEO (including robots.txt, sitemap generation, automated yet customisable metadata, and social sharing data)
+-   Google Analytics
+-   PostCSS support
+-   Developer enviornment variables
+-   Accessibility support
+-   Based on Gatsby Starter Default
 
 ## Getting started 📖
 
@@ -46,7 +45,7 @@ Providing a baseline Gatsby project to quickly and easily build upon, whilst fea
 
 ## Configuration
 
-Edit and update the root ```config.js``` file.
+Edit and update the root `config.js` file.
 
 ## Contributing
 
@@ -54,5 +53,17 @@ Welcome any improvements or suggestions :-)
 
 ## Changelog
 
+### 1.1.0
+
+-   CSS updates
+-   Added focus-visible polyfill for improved accessibility
+-   Added Icon component for use with SVG
+-   Package updates
+
+### 1.0.1
+
+-   Package updates
+
 ### 1.0.0
-* Initial commit
+
+-   Initial commit

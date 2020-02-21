@@ -28,23 +28,12 @@ class Layout extends Component {
 
 						<div id="layout-svgs" className="layout-svgs" />
 
-						<div
-							id="site-container"
-							className="site-container"
-							role="document"
-						>
+						<div id="site-container" className="site-container">
 							<Header title={data.site.siteMetadata.title} />
 
-							<main id="main" className="main" role="main">
+							<main id="main" className="main">
 								{children}
 							</main>
-
-							<div
-								id="fallback-main-nav"
-								className="fallback-main-menu"
-							>
-								<Nav />
-							</div>
 
 							<Footer title={data.site.siteMetadata.title} />
 						</div>

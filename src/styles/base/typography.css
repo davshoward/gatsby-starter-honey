@@ -39,10 +39,16 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
 	display: inline-block;
 	width: 100%;
-	color: var(--color-grey);
+	color: var(--heading-color);
 	font-size: calc(
 		(var(--heading-min-size) * 1rem) +
 			(var(--heading-max-size) - var(--heading-min-size)) *
@@ -54,22 +60,14 @@ h6 {
 }
 
 a {
-	color: var(--color-orange);
+	color: var(--link-color);
 }
 
 p,
 ul,
 ol {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	line-height: 1.6;
-
-	@media (--md) {
-		font-size: 1.125rem;
-	}
-
-	@media (--lg) {
-		font-size: 1.25rem;
-	}
 
 	&:empty {
 		display: none;
@@ -78,31 +76,16 @@ ol {
 
 ul,
 ol {
-	padding-left: var(--base-padding);
+	padding-left: var(--rhythm-md);
 
 	ul,
 	ol {
-		padding-left: var(--base-padding);
+		padding-left: var(--rhythm-md);
 	}
 }
 
 blockquote {
 	position: relative;
-	font-size: 1.125rem;
-	padding-left: 2.5rem;
-
-	&::before {
-		content: url("/icons/quote.svg");
-		width: 2rem;
-		height: 2rem;
-		position: absolute;
-		top: 0;
-		left: -0.5rem;
-		color: var(--color-pink);
-	}
-}
-
-cite {
-	display: block;
-	font-style: normal;
+	font-style: italic;
+	padding-left: var(--rhythm-md);
 }

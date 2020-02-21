@@ -1,4 +1,3 @@
-// Hide only visually, but have it available for screenreaders
 .visuallyhidden {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -9,8 +8,7 @@
 	position: absolute;
 	width: 1px;
 
-	// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard
-	&.focusable {
+	&.is-focusable {
 		&:active,
 		&:focus {
 			clip: auto;
@@ -23,10 +21,24 @@
 	}
 }
 
-// Hide only text visually
-.texthidden {
-    border: 0;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+.coverlink {
+	position: relative;
+	text-decoration: none;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		cursor: pointer;
+	}
+}
+
+.full-bleed {
+	width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
 }

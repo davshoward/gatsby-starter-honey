@@ -20,6 +20,13 @@ module.exports = {
 		`gatsby-plugin-sharp`,
 		`gatsby-plugin-react-helmet`,
 		{
+			resolve: "gatsby-plugin-svgr",
+			options: {
+				prettier: true,
+				svgo: true,
+			},
+		},
+		{
 			resolve: `gatsby-plugin-manifest`,
 			options: config.manifest,
 		},

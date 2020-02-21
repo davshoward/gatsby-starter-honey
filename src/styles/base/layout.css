@@ -1,51 +1,53 @@
-// For syncing JavaScript and CSS media queries
 body::before {
-    content: "xs";
+	content: "xs";
 	display: none;
 	visibility: hidden;
 
 	@media (--sm) {
-        content: "sm";
+		content: "sm";
 	}
 	@media (--md) {
-        content: "md";
+		content: "md";
 	}
 	@media (--lg) {
-        content: "lg";
+		content: "lg";
 	}
 	@media (--xl) {
-        content: "xl";
-	}
-	@media (--xxl) {
-        content: "xxl";
+		content: "xl";
 	}
 }
 
 body,
 html {
-    overflow-x: hidden;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 .rhythm {
-    * + * {
-        margin-top: var(--base-rhythm);
-    }
+	* + * {
+		margin-top: var(--rhythm-md);
+	}
 
-    li + li,
-    dt, dd {
-        margin-top: 0.25rem;
-    }
+	li + li,
+	dt,
+	dd {
+		margin-top: 0.25rem;
+	}
 }
 
 .site-container {
-    max-width: 120rem;
-    margin: 0 auto;
+	max-width: 120rem;
+	margin: 0 auto;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 var(--base-padding);
-	max-width: 72rem;
+	margin: 0 auto;
+	padding: 0 var(--rhythm-md);
+	max-width: 36rem;
+
+	@media (--lg) {
+		max-width: 62rem;
+	}
 
 	@media (--xl) {
 		max-width: 84rem;

@@ -5,24 +5,29 @@
 @custom-media --xxl (width >= 120em);
 
 :root {
-	--half-padding: 0.625rem;
-	--base-padding: 1.25rem;
-	--double-padding: 2.5rem;
-	--triple-padding: 3.75rem;
+	--rhythm-sm: 0.625rem;
+	--rhythm-md: 1.25rem;
+	--rhythm-lg: 2.5rem;
+	--rhythm-xl: 3.75rem;
+	--rhythm-xxl: 5rem;
 
-	--base-rhythm: 1.25rem;
 	--fluid-type-min-width: 25;
 	--fluid-type-max-width: 96;
 
-	--font-color: #1a1a1a;
+	--transition-smooth: cubic-bezier(0.765, 0, 0.175, 1);
+
 	--font-base: "Quicksand", sans-serif;
 	--font-header: "Quicksand", sans-serif;
 
-	--outline-color: var(--color-orange);
-	--selection-color: var(--color-orange);
+	--color-yellow-500: #fec107;
+	--color-orange-500: #ff5722;
 
-	--color-yellow: #fec107;
-	--color-orange: #ff5722;
+	--color-grey-500: #333b44;
 
-	--color-grey: #333b44;
+	--font-color: #333333;
+	--heading-color: var(--font-color);
+	--link-color: var(--font-color);
+
+	--outline-color: var(--color-orange-500);
+	--selection-color: var(--color-orange-500);
 }
