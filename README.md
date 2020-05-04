@@ -53,6 +53,11 @@ Welcome any improvements or suggestions :-)
 
 ## Changelog
 
+### 1.1.1
+
+-   CSS variable updates
+-   Package updates
+
 ### 1.1.0
 
 -   CSS updates
