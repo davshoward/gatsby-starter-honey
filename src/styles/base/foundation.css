@@ -24,7 +24,7 @@ html {
 
 body {
 	min-height: 100vh;
-	color: var(--font-color);
+	color: var(--color-base);
 	font-family: var(--font-base);
 	font-size: 1rem;
 	overflow-wrap: break-word;
@@ -72,7 +72,7 @@ small {
 ::-moz-selection,
 ::selection {
 	background-color: var(--selection-color);
-	color: var(--font-color);
+	color: var(--color-base);
 	text-shadow: none;
 }
 

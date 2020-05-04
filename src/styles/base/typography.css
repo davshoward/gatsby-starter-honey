@@ -76,16 +76,16 @@ ol {
 
 ul,
 ol {
-	padding-left: var(--rhythm-md);
+	padding-left: var(--spacing-md);
 
 	ul,
 	ol {
-		padding-left: var(--rhythm-md);
+		padding-left: var(--spacing-md);
 	}
 }
 
 blockquote {
 	position: relative;
 	font-style: italic;
-	padding-left: var(--rhythm-md);
+	padding-left: var(--spacing-md);
 }

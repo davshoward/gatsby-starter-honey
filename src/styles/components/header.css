@@ -4,10 +4,10 @@
 	margin: 0 auto;
 	z-index: 7;
 	background: var(--color-yellow-500);
-	padding: var(--rhythm-md) 0;
+	padding: var(--spacing-md) 0;
 
 	@media (--md) {
-		padding: var(--rhythm-md);
+		padding: var(--spacing-md);
 	}
 
 	a:not(.logo) {
@@ -25,7 +25,7 @@
 	flex: 0 1 auto;
 	display: flex;
 	align-items: center;
-	margin-right: var(--rhythm-md);
+	margin-right: var(--spacing-md);
 	font-size: 1.5rem;
 	text-decoration: none;
 	font-weight: 700;

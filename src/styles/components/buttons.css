@@ -7,7 +7,7 @@
 	text-align: center;
 	white-space: normal;
 	margin: 0;
-	padding: var(--rhythm-sm) var(--rhythm-md);
+	padding: var(--spacing-sm) var(--spacing-md);
 	font-size: 1rem;
 	line-height: 1.2;
 	border: 1px solid transparent;
@@ -37,6 +37,6 @@
 
 	.icon {
 		color: inherit;
-		margin-left: var(--rhythm-sm);
+		margin-left: var(--spacing-sm);
 	}
 }

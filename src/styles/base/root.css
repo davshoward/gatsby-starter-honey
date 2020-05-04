@@ -3,16 +3,30 @@
 @custom-media --lg (width >= 70em);
 @custom-media --xl (width >= 96em);
 @custom-media --xxl (width >= 120em);
+@custom-selector :--heading
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	.h1,
+	.h2,
+	.h3,
+	.h4,
+	.h5,
+	.h6;
 
 :root {
-	--rhythm-sm: 0.625rem;
-	--rhythm-md: 1.25rem;
-	--rhythm-lg: 2.5rem;
-	--rhythm-xl: 3.75rem;
-	--rhythm-xxl: 5rem;
+	--spacing-xs: 0.375rem;
+	--spacing-sm: 0.625rem;
+	--spacing-md: 1.25rem;
+	--spacing-lg: 2.5rem;
+	--spacing-xl: 3.75rem;
+	--spacing-xxl: 5rem;
 
 	--fluid-type-min-width: 25;
-	--fluid-type-max-width: 96;
+	--fluid-type-max-width: 120;
 
 	--transition-smooth: cubic-bezier(0.765, 0, 0.175, 1);
 
@@ -24,9 +38,9 @@
 
 	--color-grey-500: #333b44;
 
-	--font-color: #333333;
-	--heading-color: var(--font-color);
-	--link-color: var(--font-color);
+	--color-base: #333333;
+	--heading-color: var(--color-base);
+	--link-color: var(--color-base);
 
 	--outline-color: var(--color-orange-500);
 	--selection-color: var(--color-orange-500);

@@ -23,9 +23,19 @@ html {
 	overflow-x: hidden;
 }
 
-.rhythm {
+html[class*="modal-open"] {
+	position: relative;
+	height: 100%;
+
+	body {
+		overflow: hidden;
+		height: 100%;
+	}
+}
+
+.flow {
 	* + * {
-		margin-top: var(--rhythm-md);
+		margin-top: var(--spacing-md);
 	}
 
 	li + li,
@@ -42,7 +52,7 @@ html {
 
 .container {
 	margin: 0 auto;
-	padding: 0 var(--rhythm-md);
+	padding: 0 var(--spacing-md);
 	max-width: 36rem;
 
 	@media (--lg) {
