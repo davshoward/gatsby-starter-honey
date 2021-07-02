@@ -35,13 +35,15 @@ html[class*="modal-open"] {
 
 .flow {
 	* + * {
-		margin-top: var(--spacing-md);
+		margin-top: var(--flow-md);
 	}
 
+	ul ul,
+	ol ol,
 	li + li,
 	dt,
 	dd {
-		margin-top: 0.25rem;
+		margin-top: var(--flow-xs);
 	}
 }
 
@@ -52,7 +54,7 @@ html[class*="modal-open"] {
 
 .container {
 	margin: 0 auto;
-	padding: 0 var(--spacing-md);
+	padding: 0 var(--flow-md);
 	max-width: 36rem;
 
 	@media (--lg) {

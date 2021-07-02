@@ -1,6 +1,6 @@
 .section-padding {
-	padding-top: var(--spacing-md);
-	padding-bottom: var(--spacing-md);
+	padding-top: var(--flow-md);
+	padding-bottom: var(--flow-md);
 
 	@media (--lg) {
 		padding-top: 3vw;

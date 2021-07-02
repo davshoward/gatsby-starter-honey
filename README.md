@@ -53,6 +53,13 @@ Welcome any improvements or suggestions :-)
 
 ## Changelog
 
+### 1.2.0
+
+-   Package updates
+-   Renamed rhythm spacing class to flow (and associated to custom properties)
+-   Added custom :--heading property
+-   Added Prettier config
+
 ### 1.1.1
 
 -   CSS variable updates

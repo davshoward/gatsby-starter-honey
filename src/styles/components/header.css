@@ -4,14 +4,14 @@
 	margin: 0 auto;
 	z-index: 7;
 	background: var(--color-yellow-500);
-	padding: var(--spacing-md) 0;
+	padding: var(--flow-md) 0;
 
 	@media (--md) {
-		padding: var(--spacing-md);
+		padding: var(--flow-md);
 	}
 
 	a:not(.logo) {
-		color: var(--color-grey-500);
+		color: var(--color-neutral-900);
 	}
 }
 
@@ -25,13 +25,13 @@
 	flex: 0 1 auto;
 	display: flex;
 	align-items: center;
-	margin-right: var(--spacing-md);
+	margin-right: var(--flow-md);
 	font-size: 1.5rem;
 	text-decoration: none;
 	font-weight: 700;
 	letter-spacing: -1px;
 	transition: all 0.2s ease;
-	color: var(--color-grey-500);
+	color: var(--color-neutral-900);
 
 	svg {
 		width: 3rem;

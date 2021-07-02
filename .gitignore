@@ -65,8 +65,13 @@ public
 yarn-error.log
 .pnp/
 .pnp.js
+yarn.lock
+
 # Yarn Integrity file
 .yarn-integrity
 
 ## Honey files
 *.ai
+
+## Package lock
+package-lock.json

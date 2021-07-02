@@ -5,7 +5,7 @@ const SecondPage = () => (
 	<Layout>
 		<SEO title="Page two" />
 		<section className="section-padding">
-			<div className="container rhythm">
+			<div className="container flow">
 				<h1>Hi from the second page</h1>
 				<p>Welcome to page 2</p>
 			</div>
